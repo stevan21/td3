@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+}
+
+:root{
+    --bg-color:#3461ccb1;
+    --second-bg-color:#151515;
+    --text-color:white;
+    --main-color:orange;
+}
+
+body{
+    background: var(--text-color);
+}
+.navbar{
+    position: fixed;
+    background:#fff;
+    height: 80px;
+    width: 100%;
+    z-index: 9;
+}
+a.logo{
+color: var(--bg-color);
+font-size: 25px;
+line-height: 80px;
+padding: 0 100px;
+}
+a span{
+    color: #151515;
+}
+header .head{
+    float: right;
+    margin-right: 400px;
+  } 
+.head ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+.head ul li a {
+    color: black;
+    font-size: 17px;
+    transition: 0.2s ease-in-outs;
+   
+}
+.head a:hover,
+.head a.ctive {
+    color:var(--bg-color) ;
+    
+}
+
+.connex {
+    position: absolute;
+    right: 40px;
+    top: 23PX;
+    margin-right: 33px;
+    line-height: 2rem;
+}
+.connex a{
+    color: black;
+     padding: 15px;
+    
+   }
+   
+.connex a:hover,
+.connex a.active {
+  background: var(--bg-color); 
+  color: #fff;
+  border-radius: 24px;
+    transition: .5s;
+}
+
+/* 2eme partie faire la barre jaune*/
+.barre{
+    position: relative;
+    display: flex;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+   text-align: center;
+    bottom: 105px;
+    gap: 120px;
+    background: var(--main-color);
+    
+    
+}
+
+
+
+section h6{
+    color:var(--second-bg-color);
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+section span{
+    color: var(--bg-color);
+}
+
+/* 3eme partiie faire le body avec les images */
+.container{
+    position: relative;
+    bottom: 23%;
+    display: flex;
+    margin:60PX;
+    padding: 20PX;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.btn{
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 52px;
+    color: var(--white);
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color:var(--bg-color);
+}
+.action_btns{
+    position: relative;
+    left: 52px;
+    bottom: 160px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.action_btns .video{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.action_btns .video .play{
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-content: center;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    background-color: var(--bg-color);
+    transition: 0.3s;
+}
+.action_btns .video span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #151515;
+}
+.action_btns .video:hover .play {
+    background-color: var(--secondary-color-dark);
+}
+.image{
+    position: relative;
+    right: 70px;
+    margin: 45px;
+}
+.image img{
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    float: right;
+    display: block;
+    width: 160px;
+    padding-right: 23px;
+    padding-bottom: 23PX;
+}
+
+#modifierB{
+    border-top-right-radius: 56px;
+}
+#modifierA{
+    border-top-left-radius: 56px;
+}
+.element{
+    position: relative;
+    text-align: left;
+}
+.element h5{
+    position: relative;
+    color: red;
+    left: 52px;
+    top: 60PX;
+}
+.element h1{
+    position: relative;
+    BOTTOM: 74PX;
+    left: -86PX;
+    TEXT-ALIGN: LEFT;
+    height: 110px;
+    font-size: 3em;
+    line-height: 3rem;
+    margin: 137px;
+    color: var(--second-bg-color);
+}
+.element p{
+    position: relative;
+    display: flex;
+    bottom: 200PX;
+    left: 52PX;
+    margin-right: 100PX;
+}
+
+/* faire la partie blue que jai nomme trafiq*/
+
+.trafic{
+    position: relative;
+    display: flex;
+    margin:0PX;
+    padding: 50PX;
+    bottom: 105px;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    background-color: var(--bg-color);
+    color: #fff;
+    
+}
+.total{
+    border-left: solid #fff;
+    border-width: 1px;
+    padding: 5px;
+}
+
+/* paramettre des cartes*/
+
+.carte{
+    position: relative;
+    background: #f6f1f1;
+    bottom: 105px;
+}
+
+.titre h1{
+    text-align: center;
+}
+.titre h5{
+    text-align: center;
+    padding: 20px;
+    color: red;
+  
+}
+.carte_img{
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 2rem;
+    border-radius: 5px;
+   
+}
+.table{
+    padding: 21px;
+   background-color: white;
+   font-size: 12PX;
+   border-radius: 25px;
+}
+.table i {
+    position: relative;
+   bottom: 10px;
+    color: #fff;
+    padding: 7px;
+    border-radius: 4PX;
+}
+#bleu {
+    background-color:var(--bg-color);
+}
+#vert {
+    background-color: greenyellow;
+}
+#orange {
+    background-color: orange;
+}
+#rose {
+    background-color: pink;
+}
+.table h2{
+    text-align: left;
+}
+.table P{
+    text-align: left;
+}
+/* parametre de resources*/
+.ressource{
+    position: relative;
+    padding-left: 30%;
+    bottom: 110px;
+ display: flex;
+ background: #f6f1f1;
+
+}
+.image_r img{
+    position: relative;
+    right: 140%;
+    width: 250px;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+.text_r{
+   position: relative;
+   right: 7%;
+   top: 43PX;
+   margin-right: 260PX;
+   padding: 3PX;
+    text-align: left;
+    line-height: 30PX;
+    gap: 4rem;
+}
+#Mu {
+    position: relative;
+    left: -60%;
+    width: 128px;
+    BOTTOM: 171PX;
+    border-radius: 54px;
+    border: solid #fff;
+}
+.text_r h5{
+    color: red;
+    line-height: 62PX;
+}
+.text_r P{
+    line-height: 20PX;
+}
+
+/* reverse*/
+.reverse {
+    position: relative;
+    padding-left: 30%;
+    bottom: 110px;
+ display: flex;
+ background: #f6f1f1;
+ 
+}
+.image_s img{
+    position: relative;
+    right: 175%;
+    width: 230px;
+    bottom: 45px;
+    margin-top: 5px;
+    border-radius: 20px;
+
+}
+#Mi{
+    position: relative;
+    RIGHT: 300PX;
+    BOTTOM: 141px;
+
+}
+.text_s{
+    position: relative;
+    left: -65%;
+    top: -38PX;
+    margin-left: 260PX;
+    padding: 3PX;
+    text-align: left;
+    line-height: 23PX;
+     gap: 4rem;
+}
+.text_s h5{
+    color: red;
+}
+
+/* propriete des cours */
+
+.cours{
+   
+   gap: 10px;
+   justify-content: space-between;
+   align-content: flex-end;
+  margin: 54PX;
+}
+
+.matier{
+    position: relative;
+    right: 89px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    height: 190px;
+    cursor: pointer;
+}
+.contenu{
+    display: flex;
+    flex-basis: 200px;
+    margin: 20px;
+    border: solid #dff2f9;
+    border-width: 3px;
+    justify-content: center;
+    border-radius: 21px;
+    align-items: center;
+
+}
+.contenu h2{
+    text-align: center;
+    padding: 10PX;
+    font-size: 12px;
+}
+.contenu .ico{
+    padding: 8px;
+
+ border-radius: 10px;
+}
+#A{
+    color: blue;
+   
+}
+#B{
+  color: rgb(106, 163, 21);
+  background-color: greenyellow;
+}
+#C{
+    color: pink;
+}
+#D{
+    color: sandybrown;
+}
+#E{
+    color: teal;
+}
+#F{
+    color: maroon;
+}
+#G{
+    color: rgb(165, 134, 96);
+}
+#H{
+    color: darkmagenta;
+}
+.last{
+   
+    gap: 1px;
+    justify-content: space-between;
+    align-content: flex-end;
+   margin: 54PX;
+ }
+
+.dernier{
+    position: relative;
+    right: 339px;
+    TOP: 81PX;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    height: 190px;
+    cursor: pointer;
+    text-align: center;
+}
+.fin{
+
+    flex-basis: 200px;
+    margin: -39px;
+    border-width: 3px;
+    justify-content: center;
+    border-radius: 21px;
+    align-items: center;
+}
+.fin img{
+    display: flex;
+    width: 70px;
+    border-radius: 60PX;
+    gap: 10px;
+}
+.dernier h2{
+    font-size: 18PX;
+
+}
+.dernier h3{
+    font-size: 10px;
+    color: #5d6264;
+}.dernier h2, h3{
+    position: relative;
+    right: 68px;
+}
+.para p{
+ 
+  left: 56px;
+    TOP: 81PX;
+   
+    height: 190px;
+    cursor: pointer;
+    text-align: center;
+    margin: 99px;
+}
